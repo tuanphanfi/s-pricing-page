@@ -22,10 +22,10 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand text-secondary" href="#">CoderSchool</a>
         <!-- button color not working yet -->
-        <button type="button bg-danger text-danger" aria-expanded="false" class="navbar-toggler" data-toggle="collapse"
+        <button type="button bg-danger" aria-expanded="false" class="navbar-toggler" data-toggle="collapse"
             aria-label="Toggle navigation" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -48,25 +48,25 @@
     </nav>
 
     <!-- not working -->
-    <div class="row">
-        <div class="container text-center">
-            <img class="" style="width: 350px;"
-                src="https://cs-pricing-page.netlify.app/img/logo.jpeg" alt="aaaaaaaa">
-            <h1 >Courses Starting September 2019</h1>
+    <div class="row pt-5 pb-5">
+        <div class="container text-center ">
+            <img class="mt-5" style="width: 350px;" src="https://cs-pricing-page.netlify.app/img/logo.jpeg"
+                alt="aaaaaaaa">
+            <h1>Courses Starting September 2019</h1>
             <p>Designed to help talented individuals meet and learn new technologies fast. Meet 5 times a week for full
                 stack web development training.</p>
-            <p class="typewrite red" data-period="2000" data-type="[ 
+            <h1 class="typewrite text-danger" data-period="2000" data-type="[ 
             &quot;Ready to change your life?&quot;, 
             &quot;What are you waiting for?&quot;, 
             &quot;Top-Rated Programming Courses Starting September 2019&quot;,
             &quot;Join CoderSchool Today!&quot;
-            ]"><span class="wrap">What are you waiting for?</span></p>
+            ]"><span class="wrap">What are you waiting for?</span></h1>
         </div>
         <!-- ending row -->
     </div>
 
     <!-- working on -->
-    <div class="row bg-secondary">
+    <div class="row pt-5 pb-5 courses">
         <div class="container ">
             <div class="row">
                 <h1 class="text-danger mx-auto" style="width: 800px;">Curriculum designed to get you hired</h1>
@@ -77,54 +77,93 @@
                     simulate the types of challenges you will meet in your professional career.
 
                 </p>
-                <div class="col-sm mr-3 bg-white">
+                <div class="col-sm mr-3 bg-white pt-3 pb-3 card">
                     <img class="card-img-top" src="img\card1.png" alt="">
-                    <h5 class="card-title">Full Stack Web Development</h5>
+                    <h5 class="card-title ">Full Stack Web Development</h5>
                     <p class="card-text">HTML/CSS, Javascript, React, Python, Flask</p>
                     <button class="btn btn-danger float-right">Learn more</button>
                 </div>
-                <div class="col-sm mr-3 bg-white">
+                <div class="col-sm mr-3 bg-white pt-3 pb-3 card">
                     <img class="card-img-top" src="img\card2.png" alt="">
-                    <h5 class="card-title">Full Stack Web Development</h5>
-                    <p class="card-text">HTML/CSS, Javascript, React, Python, Flask</p>
+                    <h5 class="card-title">AI/ML Data Science</h5>
+                    <p class="card-text">Python, SQL, Machine Learning, Deep Learning, NLP, GCP, End-to-end Machine
+                        Learning</p>
                     <button class="btn btn-danger float-right">Learn more</button>
                 </div>
-                <div class="col-sm bg-white">
+                <div class="col-sm bg-white pt-3 pb-3 card">
                     <img class="card-img-top" src="img\card3.png" alt="">
-                    <h5 class="card-title">Full Stack Web Development</h5>
-                    <p class="card-text">HTML/CSS, Javascript, React, Python, Flask</p>
-                    <button class="btn btn-danger float-right">Learn more</button>
+                    <h5 class="card-title">Mobile App Development</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <button class="btn btn-danger float-right ">Learn more</button>
                 </div>
             </div>
         </div>
         <!-- ending row -->
     </div>
 
-    <!-- <nav>
-        <ul>
-            <li><a href="">CorderSchool</a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Team</a></li>
-        </ul>
-
-        <ul>
-            <li><a href="">EN</a></li>
-            <span>|</span>
-            <li><a href="">VI</a></li>
-        </ul>
-
-
-    </nav> -->
-
-    <div class="container ">
-        <div class="row">
-
+    <div class="row history pt-5 pb-5" style="background-image:url('./img/banner.jpg')" style="background-size: 100% 100%;
+    background-repeat: no repeat;">
+        <!-- <img src="img\banner.jpg" alt=""> -->
+        <div class="container text-center">
+            <i class="fas fa-history "></i>
+            <h1 class="">History</h1>
+            <p>Over the past 5 years we've trained over 800 developers.
+                Our alumni include engineers currently working at Grab, Facebook, Google, & Netflix</p>
         </div>
     </div>
 
+    <section id="fourth" class="learn-more py-5">
+        <div class="container ">
+            <h1 class="text-center text-danger">Learn more</h1>
+            <p class="text-center">
+                We have guidance counselors available to support you in your learning
+                journey. Enter your information to schedule a consultation
+            </p>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="fname">First Name</label>
+                        <input type="text" class="form-control" id="fname" placeholder="John" />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="lname">Last Name</label>
+                        <input type="text" class="form-control" id="lname" placeholder="Doe" />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email" />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="password">Phone</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="1234 Main St" />
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck" />
+                        <label class="form-check-label" for="gridCheck">
+                            Check me out
+                        </label>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-danger btn-block">Learn more</button>
+                </div>
+            </form>
+        </div>
 
 
+    </section>
 
+    <footer class="row text-center">
+        <p class="mx-auto">Built with ️💋👏❤️ by <a href="https://github.com/tuanphanfi">Tuan Phan</a></p>
+
+    </footer>
 
 
 
@@ -141,6 +180,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="./js/typewrite.js"></script>
+
 </body>
 
 </html>

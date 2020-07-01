@@ -1,31 +1,46 @@
-body, nav, ul {
-    padding: 0;
-    margin: 0;
-    /* background-color: red; */
-    /* color:#ffff00; */
+.courses {
+    background-color: #e9ebee;
 }
 
-a {
-    color: rgb(0, 0, 0);
-}
-
-nav {
+.history {
+    height: 900px;
     display: flex;
-    justify-content: space-between;
-    /* background-color: #F8F9FA; */
-    position: fixed;
-    top: 0
+    align-content: center;
+    background-image: url("./img/banner.jpg");
 }
 
-nav ul li {
+.fa-history {
+    font-size: 40px;
+    display: inline-block;
+    /* background-color: blue; */
+}
+
+.history div h1 {
     display: inline-block;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+.learn-more {
+    background-color: #e9ebee;
 }
 
-.navbar-nav>.nav-item {
-    margin-left: 15px;
+.history div p {
+    font-size: 20px;
+}
+
+.learn-more div p {
+    font-size: 25px;
+}
+
+.card {
+    margin-bottom: 25px;
+    box-shadow: 0 10px 40px rgba(59, 43, 91, 0.3);
+}
+
+#fourth>.container>p:nth-last-of-type(1) {
+    font-size: 25px;
+    margin-bottom: 100px;
+}
+
+.bg-light {
+    background-color: #e9ebee;
 }
