@@ -23,7 +23,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand text-secondary" href="#">CoderSchool</a>
+        <a class="navbar-brand text-dark" href="#">CoderSchool</a>
         <!-- button color not working yet -->
         <button type="button bg-danger" aria-expanded="false" class="navbar-toggler" data-toggle="collapse"
             aria-label="Toggle navigation" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
@@ -33,7 +33,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link text-secondary" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-dark" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-secondary" href="#">Team</a>
@@ -47,73 +47,95 @@
         </div>
     </nav>
 
-    <!-- not working -->
-    <div class="row pt-5 pb-5">
-        <div class="container text-center ">
-            <img class="mt-5" style="width: 350px;" src="https://cs-pricing-page.netlify.app/img/logo.jpeg"
-                alt="aaaaaaaa">
-            <h1>Courses Starting September 2019</h1>
-            <p>Designed to help talented individuals meet and learn new technologies fast. Meet 5 times a week for full
-                stack web development training.</p>
-            <h1 class="typewrite text-danger" data-period="2000" data-type="[ 
+    <section id="first-section">
+        <img class="" style="width: 350px;" src="https://cs-pricing-page.netlify.app/img/logo.jpeg" alt="aaaaaaaa">
+        <h1 class=" text-center ">Courses Starting September 2019</h1>
+        <p class=" text-center ">Designed to help talented individuals meet and learn new technologies fast. Meet 5
+            times a week for
+            full
+            stack web development training.</p>
+        <h1 class="typewrite text-danger text-center" data-period="2000" data-type="[ 
             &quot;Ready to change your life?&quot;, 
             &quot;What are you waiting for?&quot;, 
             &quot;Top-Rated Programming Courses Starting September 2019&quot;,
             &quot;Join CoderSchool Today!&quot;
             ]"><span class="wrap">What are you waiting for?</span></h1>
-        </div>
-        <!-- ending row -->
-    </div>
+    </section>
 
-    <!-- working on -->
-    <div class="row pt-5 pb-5 courses">
-        <div class="container ">
-            <div class="row">
-                <h1 class="text-danger mx-auto" style="width: 800px;">Curriculum designed to get you hired</h1>
-                <p class="text-center" style="width: 1800px;">Originally developed in Silicon Valley, our teaching
+    <section id="second-section">
+        <div class="row">
+            <div class="container text-center">
+                <h1 class="text-danger mx-auto">Curriculum designed to get you hired</h1>
+                <p class="text-center">Originally developed in Silicon Valley, our teaching
                     materials
                     bring a wealth of experience in coding
                     education. We focus on real-world projects so you can build a strong portfolio of real apps that
                     simulate the types of challenges you will meet in your professional career.
 
                 </p>
-                <div class="col-sm mr-3 bg-white pt-3 pb-3 card">
-                    <img class="card-img-top" src="img\card1.png" alt="">
-                    <h5 class="card-title ">Full Stack Web Development</h5>
-                    <p class="card-text">HTML/CSS, Javascript, React, Python, Flask</p>
-                    <button class="btn btn-danger float-right">Learn more</button>
-                </div>
-                <div class="col-sm mr-3 bg-white pt-3 pb-3 card">
-                    <img class="card-img-top" src="img\card2.png" alt="">
-                    <h5 class="card-title">AI/ML Data Science</h5>
-                    <p class="card-text">Python, SQL, Machine Learning, Deep Learning, NLP, GCP, End-to-end Machine
-                        Learning</p>
-                    <button class="btn btn-danger float-right">Learn more</button>
-                </div>
-                <div class="col-sm bg-white pt-3 pb-3 card">
-                    <img class="card-img-top" src="img\card3.png" alt="">
-                    <h5 class="card-title">Mobile App Development</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <button class="btn btn-danger float-right ">Learn more</button>
+
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card bg-white">
+                            <img class="card-img-top" src="img\card1.png" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title ">Full Stack Web Development</h5>
+                                <p class="card-text ">HTML/CSS, Javascript, React, Python, Flask</p>
+                                <div class="text-right">
+                                    <a class="btn btn-danger text-white">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md">
+                        <div class="bg-white card">
+                            <img class="card-img-top" src="img\card2.png" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">AI/ML Data Science</h5>
+                                <p class="card-text">Python, SQL, Machine Learning, Deep Learning, NLP, GCP, End-to-end
+                                    Machine
+                                    Learning</p>
+                                <div class="text-right">
+                                    <a class="btn btn-danger text-white">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class=" bg-white  card">
+                            <img class="card-img-top" src="img\card3.png" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Mobile App Development</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the
+                                    card's content.</p>
+                                <div class="text-right">
+                                    <a class="btn btn-danger text-white ">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
+            <!-- ending row -->
         </div>
-        <!-- ending row -->
-    </div>
+    </section>
 
-    <div class="row history pt-5 pb-5" style="background-image:url('./img/banner.jpg')" style="background-size: 100% 100%;
+    <section id="third-section" style="background-image:url('./img/banner.jpg')" style="background-size: 100% 100%;
     background-repeat: no repeat;">
-        <!-- <img src="img\banner.jpg" alt=""> -->
-        <div class="container text-center">
-            <i class="fas fa-history "></i>
-            <h1 class="">History</h1>
-            <p>Over the past 5 years we've trained over 800 developers.
-                Our alumni include engineers currently working at Grab, Facebook, Google, & Netflix</p>
-        </div>
-    </div>
+        <h1><i class="fas fa-history text-center"></i>History</h1>
+        <p class="text-center">Over the past 5 years we've trained over 800 developers.
+            Our alumni include engineers currently working at Grab, Facebook, Google, & Netflix</p>
+    </section>
 
-    <section id="fourth" class="learn-more py-5">
+    <section id="fourth-section" class="learn-more py-5">
         <div class="container ">
             <h1 class="text-center text-danger">Learn more</h1>
             <p class="text-center">
@@ -160,8 +182,8 @@
 
     </section>
 
-    <footer class="row text-center">
-        <p class="mx-auto">Built with ️💋👏❤️ by <a href="https://github.com/tuanphanfi">Tuan Phan</a></p>
+    <footer class="">
+        <span> Built with ️💋👏❤️ by <a href="https://github.com/tuanphanfi"> Tuan Phan</a></span>
 
     </footer>
 

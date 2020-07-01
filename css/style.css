@@ -1,26 +1,41 @@
-.courses {
+.navbar-nav>.nav-item {
+    margin-left: 15px;
+}
+
+.wrap {
+    font-weight: 700;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 800px;
+}
+
+#first-section {
+    padding-top: 9%;
+}
+
+#second-section, #fourth-section {
+    padding-top: 4%;
     background-color: #e9ebee;
 }
 
-.history {
-    height: 900px;
-    display: flex;
-    align-content: center;
+#third-section {
     background-image: url("./img/banner.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .fa-history {
     font-size: 40px;
     display: inline-block;
-    /* background-color: blue; */
 }
 
-.history div h1 {
-    display: inline-block;
-}
-
-.learn-more {
-    background-color: #e9ebee;
+#third-section h1 {
+    padding: 5% 0 0 0;
 }
 
 .history div p {
@@ -32,15 +47,24 @@
 }
 
 .card {
+    /* min-height: 600px; */
     margin-bottom: 25px;
     box-shadow: 0 10px 40px rgba(59, 43, 91, 0.3);
 }
 
-#fourth>.container>p:nth-last-of-type(1) {
+#fourth-section>.container>p:nth-last-of-type(1) {
     font-size: 25px;
     margin-bottom: 100px;
 }
 
-.bg-light {
-    background-color: #e9ebee;
+.card-text {
+    min-height: 75px;
+}
+
+footer {
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid cadetblue;
 }
